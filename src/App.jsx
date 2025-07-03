@@ -1,11 +1,19 @@
-
+import Navbar from "./component/Navbar"
+import Home from "./pages/Home"
+import Error from "./pages/Error"
+import Details from "./pages/Details"
+import {Routes, Route} from "react-router-dom"
 
 function App() {
-
   return (
     <>
-      
-      <h1 className="text-4xl text-center mt-24 font-black">Welcome to react!</h1>
+      <Navbar/>
+
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/details" element={<Details/>}/>
+        <Route path="*" element={<Error/>}/>
+      </Routes>
 
     </>
   )
