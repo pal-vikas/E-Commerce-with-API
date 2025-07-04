@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Navbar() {
     return (
         <>
-                <div className="p-5 mt-2 border-b border-neutral-400">
+                <div className="p-5 mt-2 border-b border-neutral-200">
                     <div className="w-[900px] mx-auto flex items-center  justify-between">
                         {/* <a href="/" className='text-2xl font-bold'>API's and UseEffect</a> */}
                         <Link className='text-2xl font-bold' to={'/'} >API's and UseEffect</Link>
